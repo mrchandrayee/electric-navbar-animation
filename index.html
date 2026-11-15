@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <title>Electric Navbar Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <p class="eyebrow">INTERACTIVE CSS EXPERIMENT</p>
+      <h1>Electric Navbar Animation</h1>
+      <p class="subtitle">A glowing electric indicator that follows your navigation</p>
+    </header>
+
+    <section class="demo-area" aria-label="Electric navigation demonstration">
+      <nav class="navbar" aria-label="Main navigation">
+        <span class="electric-indicator" id="electricIndicator" aria-hidden="true"></span>
+        <ul class="nav-list" id="navList">
+          <li><a class="nav-link active" href="#home" data-section="home" aria-current="page">HOME</a></li>
+          <li><a class="nav-link" href="#projects" data-section="projects">PROJECTS</a></li>
+          <li><a class="nav-link" href="#services" data-section="services">SERVICES</a></li>
+          <li><a class="nav-link" href="#about" data-section="about">ABOUT</a></li>
+          <li><a class="nav-link" href="#contact" data-section="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="section-preview" id="sectionPreview" aria-live="polite">
+        <span class="preview-kicker">CURRENT SECTION</span>
+        <h2 id="previewTitle">HOME</h2>
+        <p id="previewText">Welcome to the electric navigation demo.</p>
+      </div>
+      <p class="hint">Hover or click a navigation item to move the electric glow.</p>
+    </section>
+
+    <section class="source-panel">
+      <div class="source-heading">
+        <div><span class="eyebrow">SOURCE CODE</span><h2>CSS — Navbar</h2></div>
+        <button type="button" id="copyCss">Copy CSS</button>
+      </div>
+      <pre><code id="cssPreview"></code></pre>
+    </section>
+    <footer>HTML · CSS · JavaScript — no libraries required</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
